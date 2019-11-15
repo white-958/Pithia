@@ -116,6 +116,45 @@ public class LoginUI extends javax.swing.JFrame {
         jButton14 = new javax.swing.JButton();
         jButton15 = new javax.swing.JButton();
         jButton16 = new javax.swing.JButton();
+        EisagosiStudent = new javax.swing.JDialog();
+        jPanel15 = new javax.swing.JPanel();
+        jLabel23 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        gid = new javax.swing.JTextField();
+        gname = new javax.swing.JTextField();
+        gsurname = new javax.swing.JTextField();
+        gexam = new javax.swing.JTextField();
+        jButton17 = new javax.swing.JButton();
+        jButton18 = new javax.swing.JButton();
+        gerror = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        gusername = new javax.swing.JTextField();
+        gpassword = new javax.swing.JTextField();
+        Epe3ergasia2 = new javax.swing.JDialog();
+        jPanel16 = new javax.swing.JPanel();
+        jLabel29 = new javax.swing.JLabel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        eid = new javax.swing.JTextField();
+        ename = new javax.swing.JTextField();
+        esurname = new javax.swing.JTextField();
+        eexam = new javax.swing.JTextField();
+        jButton19 = new javax.swing.JButton();
+        jButton20 = new javax.swing.JButton();
+        gerror1 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        eusername = new javax.swing.JTextField();
+        epassword = new javax.swing.JTextField();
+        Epe3ergasia1 = new javax.swing.JDialog();
+        jPanel17 = new javax.swing.JPanel();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        Studenttable = new javax.swing.JTable();
+        jLabel35 = new javax.swing.JLabel();
         Login = new javax.swing.JPanel();
         Password = new javax.swing.JPasswordField();
         Username = new javax.swing.JTextField();
@@ -841,11 +880,21 @@ public class LoginUI extends javax.swing.JFrame {
         jButton14.setBackground(new java.awt.Color(255, 255, 255));
         jButton14.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton14.setText("Εισαγωγή Φοιτητή");
+        jButton14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton14ActionPerformed(evt);
+            }
+        });
         jPanel14.add(jButton14, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 80, 160, 40));
 
         jButton15.setBackground(new java.awt.Color(255, 255, 255));
         jButton15.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         jButton15.setText("Επεξεργασία");
+        jButton15.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton15ActionPerformed(evt);
+            }
+        });
         jPanel14.add(jButton15, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, 160, 40));
 
         jButton16.setBackground(new java.awt.Color(255, 255, 255));
@@ -866,6 +915,344 @@ public class LoginUI extends javax.swing.JFrame {
             .addGroup(GramatiaLayout.createSequentialGroup()
                 .addComponent(jPanel14, javax.swing.GroupLayout.PREFERRED_SIZE, 406, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel23.setText("Name:");
+
+        jLabel24.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel24.setText("Surname:");
+
+        jLabel25.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel25.setText("Exam:");
+
+        jLabel26.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel26.setText("ID:");
+
+        gid.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        gname.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        gsurname.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        gexam.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        jButton17.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton17.setText("Επιστροφή");
+        jButton17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton17ActionPerformed(evt);
+            }
+        });
+
+        jButton18.setText("Δημιουργεία");
+        jButton18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton18ActionPerformed(evt);
+            }
+        });
+
+        gerror.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        gerror.setForeground(new java.awt.Color(255, 0, 0));
+        gerror.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerror.setText(" ");
+
+        jLabel27.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel27.setText("Username");
+
+        jLabel28.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel28.setText("Password:");
+
+        gusername.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        gusername.setToolTipText("");
+
+        gpassword.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        gpassword.setToolTipText("");
+
+        javax.swing.GroupLayout jPanel15Layout = new javax.swing.GroupLayout(jPanel15);
+        jPanel15.setLayout(jPanel15Layout);
+        jPanel15Layout.setHorizontalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel26)
+                            .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel24)
+                            .addComponent(jLabel25)
+                            .addComponent(jLabel27)
+                            .addComponent(jLabel28))
+                        .addGap(33, 33, 33)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(gexam, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gsurname, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gname, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gid, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gusername, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(gpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel15Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(gerror, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(jPanel15Layout.createSequentialGroup()
+                                .addComponent(jButton17)
+                                .addGap(88, 88, 88)
+                                .addComponent(jButton18)))))
+                .addContainerGap(104, Short.MAX_VALUE))
+        );
+        jPanel15Layout.setVerticalGroup(
+            jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel15Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel26)
+                    .addComponent(gid, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel23, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(gname, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel24)
+                    .addComponent(gsurname, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel25)
+                    .addComponent(gexam, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel27)
+                    .addComponent(gusername, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel28)
+                    .addComponent(gpassword, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel15Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton17, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton18, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addComponent(gerror)
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout EisagosiStudentLayout = new javax.swing.GroupLayout(EisagosiStudent.getContentPane());
+        EisagosiStudent.getContentPane().setLayout(EisagosiStudentLayout);
+        EisagosiStudentLayout.setHorizontalGroup(
+            EisagosiStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EisagosiStudentLayout.createSequentialGroup()
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        EisagosiStudentLayout.setVerticalGroup(
+            EisagosiStudentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(EisagosiStudentLayout.createSequentialGroup()
+                .addComponent(jPanel15, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        jLabel29.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel29.setText("Name:");
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel30.setText("Surname:");
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel31.setText("Exam:");
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel32.setText("ID:");
+
+        eid.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        ename.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        esurname.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+
+        eexam.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        eexam.setText("A");
+
+        jButton19.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jButton19.setText("Επιστροφή");
+        jButton19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton19ActionPerformed(evt);
+            }
+        });
+
+        jButton20.setText("Αποθήκευση");
+        jButton20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton20ActionPerformed(evt);
+            }
+        });
+
+        gerror1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        gerror1.setForeground(new java.awt.Color(255, 0, 0));
+        gerror1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        gerror1.setText(" ");
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel33.setText("Username");
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jLabel34.setText("Password:");
+
+        eusername.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        eusername.setToolTipText("");
+
+        epassword.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
+        epassword.setToolTipText("");
+
+        javax.swing.GroupLayout jPanel16Layout = new javax.swing.GroupLayout(jPanel16);
+        jPanel16.setLayout(jPanel16Layout);
+        jPanel16Layout.setHorizontalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(55, 55, 55)
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel32)
+                            .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel30)
+                            .addComponent(jLabel31)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel34))
+                        .addGap(33, 33, 33)
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(eexam, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(esurname, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(ename, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(eid, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(eusername, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(epassword, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(jPanel16Layout.createSequentialGroup()
+                        .addGap(71, 71, 71)
+                        .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addGap(47, 47, 47)
+                                .addComponent(gerror1, javax.swing.GroupLayout.PREFERRED_SIZE, 284, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel16Layout.createSequentialGroup()
+                                .addComponent(jButton19)
+                                .addGap(88, 88, 88)
+                                .addComponent(jButton20)))))
+                .addContainerGap(104, Short.MAX_VALUE))
+        );
+        jPanel16Layout.setVerticalGroup(
+            jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel16Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(jLabel32)
+                    .addComponent(eid, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel29, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(ename, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel30)
+                    .addComponent(esurname, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(23, 23, 23)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel31)
+                    .addComponent(eexam, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel33)
+                    .addComponent(eusername, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel34)
+                    .addComponent(epassword, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(26, 26, 26)
+                .addGroup(jPanel16Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jButton19, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton20, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(50, 50, 50)
+                .addComponent(gerror1)
+                .addContainerGap(68, Short.MAX_VALUE))
+        );
+
+        javax.swing.GroupLayout Epe3ergasia2Layout = new javax.swing.GroupLayout(Epe3ergasia2.getContentPane());
+        Epe3ergasia2.getContentPane().setLayout(Epe3ergasia2Layout);
+        Epe3ergasia2Layout.setHorizontalGroup(
+            Epe3ergasia2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Epe3ergasia2Layout.createSequentialGroup()
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+        Epe3ergasia2Layout.setVerticalGroup(
+            Epe3ergasia2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(Epe3ergasia2Layout.createSequentialGroup()
+                .addComponent(jPanel16, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+        );
+
+        Studenttable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+
+            },
+            new String [] {
+                "ID", "Name", "Surname"
+            }
+        ) {
+            Class[] types = new Class [] {
+                java.lang.Integer.class, java.lang.String.class, java.lang.String.class
+            };
+
+            public Class getColumnClass(int columnIndex) {
+                return types [columnIndex];
+            }
+        });
+        Studenttable.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        Studenttable.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                StudenttableMouseClicked(evt);
+            }
+        });
+        jScrollPane3.setViewportView(Studenttable);
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        jLabel35.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel35.setText("ΛΙΣΤΑ ΦΟΙΤΗΤΩΝ");
+
+        javax.swing.GroupLayout jPanel17Layout = new javax.swing.GroupLayout(jPanel17);
+        jPanel17.setLayout(jPanel17Layout);
+        jPanel17Layout.setHorizontalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel17Layout.createSequentialGroup()
+                .addGroup(jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(146, 146, 146)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel17Layout.createSequentialGroup()
+                        .addGap(28, 28, 28)
+                        .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 417, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(39, Short.MAX_VALUE))
+        );
+        jPanel17Layout.setVerticalGroup(
+            jPanel17Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel17Layout.createSequentialGroup()
+                .addGap(0, 11, Short.MAX_VALUE)
+                .addComponent(jLabel35, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 374, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(48, 48, 48))
+        );
+
+        javax.swing.GroupLayout Epe3ergasia1Layout = new javax.swing.GroupLayout(Epe3ergasia1.getContentPane());
+        Epe3ergasia1.getContentPane().setLayout(Epe3ergasia1Layout);
+        Epe3ergasia1Layout.setHorizontalGroup(
+            Epe3ergasia1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+        );
+        Epe3ergasia1Layout.setVerticalGroup(
+            Epe3ergasia1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jPanel17, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -985,41 +1372,6 @@ public class LoginUI extends javax.swing.JFrame {
 
         login();
 
-
-        /*
-//Maria Karaxatzi
-for (int i=0;i<students.length;i++) {
-    if (students[i].getUsername().equals(Username.getText()) && (students[i].getPassword().equals(Password.getText()))) {
-        
-        StudentHomeUI.setVisible(true);
-        this.setVisible(false);
-        
-        //Aggelis Zotis  Pernaei sta label stoixia fitit
-        Username1.setText(students[i].getUsername());
-        Name.setText(students[i].getName());
-        Surname.setText(students[i].getSurname());
-        Eksamino.setText(String.valueOf(students[i].getExam()));
-        index=i;
-        
-    } else {
-        errormsg1.setText("Error passowrd or username");
-    }
-    /*else if ("admin".equals(Username.getText()) && "admin".equals(Password.getText())) {
-    new GramatiaHomeUI().setVisible(true);
-    this.setVisible(false);
-    }*//*
-}
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(LoginUI.class.getName()).log(Level.SEVERE, null, ex);
-        } finally {
-            try {
-                br.close();
-            } catch (IOException ex) {
-                Logger.getLogger(LoginUI.class.getName()).log(Level.SEVERE, null, ex);
-            }
-        }*/
-//Maria Karaxatzi
-
     }//GEN-LAST:event_LoginButtonActionPerformed
 
     private void PasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PasswordActionPerformed
@@ -1117,28 +1469,6 @@ for (int i=0;i<students.length;i++) {
     private void ChangePasswordSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ChangePasswordSaveActionPerformed
 
         ChangePasswordSave();
-// TODO add your handling code here:
-
-        /*
-            for (int i = 0; i < students.length; i++) {
-                if (students[i].getUsername().equals(Username1.getText())) {
-                    //students[i]=null; test
-                    students[i] = new Account(students[i].getId(), students[i].getName(), students[i].getSurname(), students[i].getExam(), students[i].getUsername(), ChangePassword2.getText());
-                    //  students[i].setPassword(ChangePassword2.getText());
-                    jLabel16.setText(String.valueOf(students[i].getId()));
-                    Login.setVisible(true);
-                    ChangePassword.setVisible(false);
-                    ChangePasswordError.setText("");
-                }
-            }
-            for (Account obj : students) {
-            
-                if (obj.getUsername().equals(Username.getText()) && (obj.getSurname().equals(Surname.getText())))
-                    obj.setPassword(ChangePassword2.getText());
-                jLabel16.setText(String.valueOf(obj.getUsername())); // test
-                    }
-         */
-
     }//GEN-LAST:event_ChangePasswordSaveActionPerformed
 
     private void newaitisiActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_newaitisiActionPerformed
@@ -1205,24 +1535,125 @@ for (int i=0;i<students.length;i++) {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton12ActionPerformed
 
+    private void jButton14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton14ActionPerformed
+        Gramatia.setVisible(false);
+        EisagosiStudent.setVisible(true);
+        EisagosiStudent.setSize(400,600);
+    }//GEN-LAST:event_jButton14ActionPerformed
+
+    private void jButton18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton18ActionPerformed
+        if(gid.getText().equals("") || gname.getText().equals("") || gsurname.getText().equals("") ||gexam.getText().equals("") || gusername.getText().equals("") || gpassword.getText().equals("")){
+            gerror.setText("Fields can't be empty");
+        }else{
+            try {
+                FileWriter fw=new FileWriter(filename,true);
+                String str=gid.getText()+"@"+gname.getText()+"@"+gsurname.getText()+"@"+gexam.getText()+"@"+gusername.getText()+"@"+gpassword.getText()+"\n";
+                fw.write(str);
+                fw.close();
+                Gramatia.setVisible(true);
+                EisagosiStudent.setVisible(false);
+            } catch (IOException ex) {
+                Logger.getLogger(LoginUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        
+        }
+    }//GEN-LAST:event_jButton18ActionPerformed
+
+    private void jButton17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton17ActionPerformed
+        Gramatia.setVisible(true);
+        EisagosiStudent.setVisible(false);
+    }//GEN-LAST:event_jButton17ActionPerformed
+
+    private void jButton15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton15ActionPerformed
+        try {
+            Epe3ergasia1.setVisible(true);
+            Epe3ergasia1.setSize(400, 400);
+            Gramatia.setVisible(false);
+            File file = new File(filename);
+            DefaultTableModel table = (DefaultTableModel) Studenttable.getModel();
+
+            Studenttable.setDefaultEditor(Object.class, null);
+            Scanner sc = new Scanner(file);
+            while (sc.hasNextLine()) {
+                String[] str = sc.nextLine().split("@");
+                 table.addRow(new Object[]{str[0],str[1],str[2]});
+
+                
+            }
+        } catch (FileNotFoundException ex) {
+            Logger.getLogger(LoginUI.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_jButton15ActionPerformed
+
+    private void jButton19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton19ActionPerformed
+
+    private void jButton20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton20ActionPerformed
+         try {
+                Clone(filename);
+                FileWriter fw = new FileWriter(new File(filename));
+                BufferedReader br=new BufferedReader(new FileReader(tempfilename));
+                String line;
+                while ((line = br.readLine()) != null) {
+                    Account temp = temp(line);
+                    if (temp.getId() == obj.getId()) {
+                        String newobj = obj.getId() + "@" + obj.getName() + "@" + obj.getUsername() + "@" + obj.getExam() + "@" + obj.getSurname() + "@" + ChangePassword2.getText() + "\n";
+                        fw.write(newobj);
+                    } else {
+                        fw.write(line+"\n");
+
+
+                    }
+                    
+                    
+                }
+                br.close();
+                fw.close();
+            } catch (IOException ex) {
+            }
+    }//GEN-LAST:event_jButton20ActionPerformed
+
+    private void StudenttableMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_StudenttableMouseClicked
+            Epe3ergasia1.setVisible(false);
+            Epe3ergasia2.setVisible(true);
+            Epe3ergasia2.setSize(500,500);
+            int i=Studenttable.getSelectedRow();
+           
+            File file = new File(filename);
+            try {
+                Scanner sc = new Scanner(file);
+                String line;
+                int j=0;
+                while ((line=sc.nextLine())!=null) {
+                    String[] str =line.split("@");
+                        if(j==i){
+                            eid.setText(str[0]);
+                            ename.setText(str[1]);
+                            esurname.setText(str[2]);
+                            eexam.setText(str[3]);
+                            eusername.setText(str[4]);
+                            epassword.setText(str[5]);
+                            break;
+                        }
+                j++;
+                 }
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(LoginUI.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
+    }//GEN-LAST:event_StudenttableMouseClicked
+
     private void ChangePasswordSave() {
 
 
         if (ChangePassword1.getText().equals(ChangePassword2.getText())) {
             try {
-                ChangePasswordError.setText("01");
                 Clone(filename);
-                ChangePasswordError.setText("001");
                 FileWriter fw = new FileWriter(new File(filename));
-                                ChangePasswordError.setText("1");
-
                 BufferedReader br=new BufferedReader(new FileReader(tempfilename));
-                                                ChangePasswordError.setText("2");
-
                 String line;
                 while ((line = br.readLine()) != null) {
-                                                    ChangePasswordError.setText("3");
-
                     Account temp = temp(line);
                     if (temp.getId() == obj.getId()) {
                         String newobj = obj.getId() + "@" + obj.getName() + "@" + obj.getUsername() + "@" + obj.getExam() + "@" + obj.getSurname() + "@" + ChangePassword2.getText() + "\n";
@@ -1292,13 +1723,19 @@ for (int i=0;i<students.length;i++) {
     private void login() {
 
         try {
-                File file = new File(filename);
+            File file = new File(filename);
 
             sc = new Scanner(file);
             while (sc.hasNextLine()) {
                 String[] str = sc.nextLine().split("@");
 
-                if (str[4].equals(Username.getText()) && (str[5].equals(Password.getText()))) {
+                if(Username.getText().equals("admin") && Password.getText().equals("admin")){
+                    Gramatia.setVisible(true);
+                    Gramatia.setSize(400, 400);
+                    this.setVisible(false);
+                 
+
+                }else if (str[4].equals(Username.getText()) && (str[5].equals(Password.getText()))) {
                     obj = new Account(Integer.parseInt(str[0]), str[1], str[2], str[3].charAt(0), str[4], str[5]);
 
                     StudentHomeUI.setVisible(true);
@@ -1422,7 +1859,10 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JLabel ChangePasswordError;
     private javax.swing.JButton ChangePasswordSave;
     private javax.swing.JDialog Dilwseis;
+    private javax.swing.JDialog EisagosiStudent;
     private javax.swing.JLabel Eksamino;
+    private javax.swing.JDialog Epe3ergasia1;
+    private javax.swing.JDialog Epe3ergasia2;
     private javax.swing.JButton EpistrofiStoixiaFoititi;
     private javax.swing.JDialog Gramatia;
     private javax.swing.JPanel Login;
@@ -1439,12 +1879,27 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JDialog StoixiaFoititi;
     private javax.swing.JButton Stoixiafoititi;
     private javax.swing.JDialog StudentHomeUI;
+    private javax.swing.JTable Studenttable;
     private javax.swing.JLabel Surname;
     private javax.swing.JTextField Username;
     private javax.swing.JLabel Username1;
     private javax.swing.JDialog dimiourgiaNeasAitiseis;
+    private javax.swing.JTextField eexam;
+    private javax.swing.JTextField eid;
     private javax.swing.JTextField emailTextffield;
+    private javax.swing.JTextField ename;
+    private javax.swing.JTextField epassword;
     private javax.swing.JLabel errormsg1;
+    private javax.swing.JTextField esurname;
+    private javax.swing.JTextField eusername;
+    private javax.swing.JLabel gerror;
+    private javax.swing.JLabel gerror1;
+    private javax.swing.JTextField gexam;
+    private javax.swing.JTextField gid;
+    private javax.swing.JTextField gname;
+    private javax.swing.JTextField gpassword;
+    private javax.swing.JTextField gsurname;
+    private javax.swing.JTextField gusername;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton10;
     private javax.swing.JButton jButton11;
@@ -1453,7 +1908,11 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JButton jButton14;
     private javax.swing.JButton jButton15;
     private javax.swing.JButton jButton16;
+    private javax.swing.JButton jButton17;
+    private javax.swing.JButton jButton18;
+    private javax.swing.JButton jButton19;
     private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton20;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
@@ -1476,7 +1935,20 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
@@ -1489,6 +1961,9 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JPanel jPanel12;
     private javax.swing.JPanel jPanel13;
     private javax.swing.JPanel jPanel14;
+    private javax.swing.JPanel jPanel15;
+    private javax.swing.JPanel jPanel16;
+    private javax.swing.JPanel jPanel17;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
@@ -1499,6 +1974,7 @@ for (int i=0;i<students.length;i++) {
     private javax.swing.JPanel jPanel9;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JScrollPane jScrollPane3;
     private javax.swing.JScrollPane jScrollPane6;
     private javax.swing.JButton newaitisi;
     // End of variables declaration//GEN-END:variables

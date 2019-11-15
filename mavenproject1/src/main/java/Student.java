@@ -9,7 +9,7 @@ public class Student {
     private String surname;
     // private String email;
     //private int phone;
-    private String adress;
+    //private String adress;
     private char exam;
     // private int AFM;
 
@@ -23,7 +23,7 @@ public class Student {
         this.surname = surname;
         //  this.email = email;
         //   this.phone = phone;
-        this.adress = adress;
+        //this.adress = adress;
         this.exam = exam;
         //   this.AFM = AFM;
         ListOfAitiseis = new ArrayList<String>();
@@ -36,7 +36,7 @@ public class Student {
                 + this.surname + "\n"
                 + //  this.email +"\n"+
                 //   this.phone+"\n"+
-                this.adress + "\n"
+                //this.adress + "\n"
                 + this.exam + "\n"
                 //+  this.AFM +"\n"
 );
