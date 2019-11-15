@@ -13,25 +13,19 @@ public class Courses {
         this.exam = exam;
     }
     
-    static Courses list[]={new Courses(001,"Μηχανική λογισμικου",'A'),
-                    new Courses(002,"Java",'A'),
-                    new Courses(003,"Java UI",'B'),
-                    new Courses(004,"Δεξιοτητες επικοινωνίας",'B'),
-                    new Courses(005,"Δίκτυα Υπολογιστών",'C'),
-                    new Courses(006,"SQL",'C'),
-                    new Courses(007,"Database",'E'),
-                    new Courses(010,"Server",'E')
-                    };
-
+ public String toString() {
+    return id+" "+name+" "+exam;
+}
     Courses() {
     }
     
     public String printProgramm(){
+        
         String sA="<html>Exam A :<br><html>";
         String sB="<html>Exam B :<br><html>";
         String sC="<html>Exam C :<br><html>";
         String sE="<html>Exam E :<br><html>";
-          for(Courses lesson: list){
+         /* for(Courses lesson: list){
               switch(lesson.exam){
               
                 case 'A':
@@ -47,7 +41,7 @@ public class Courses {
                       sE+=lesson.id+"\t"+lesson.name+"\t"+lesson.exam+"<br>";
                       break;
               }
-          }
+          }*/
     return sA+"<br>"+sB+"<br>"+sC+"<br>"+sE+"<br>";
         }
 }
